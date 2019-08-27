@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var config = {\n  server: {\n    protocol: 'http',\n    host: 'api.edutour.vn',\n    port: '3100'\n  }\n};\nvar server = config.server;\nconfig['server']['domain'] = \"\".concat(server.protocol, \"://\").concat(server.host, \":\").concat(server.port);\nmodule.exports = config;\n\n//# sourceURL=webpack:///./config.js?");
+eval("var config = {\n  server: {\n    protocol: 'http',\n    // host: 'api.edutour.vn',\n    host: 'localhost',\n    port: '3100'\n  }\n};\nvar server = config.server; // config['server']['domain'] = `${server.protocol}://${server.host}:${server.port}`\n\nconfig['server']['domain'] = \"http://api.edutour.vn\";\nmodule.exports = config;\n\n//# sourceURL=webpack:///./config.js?");
 
 /***/ }),
 
