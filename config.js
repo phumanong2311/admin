@@ -1,7 +1,7 @@
 var config = {
   server: {
     protocol: 'http',
-    host: 'localhost',
+    host: 'api.edutour.vn',
     port: '3100'
   }
 }
