@@ -1,0 +1,260 @@
+body {
+  font-size: 12px;
+}
+.clearfix {
+  clear: both;
+}
+.nh-textarea {
+  width: 100%;
+  height: 125px;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid #dddddd;
+  padding: 10px
+}
+
+.fs20 {
+  font-size: 20px;
+}
+.nh-revenue-chart {
+  position: relative;
+  height: 300px
+}
+
+.nh-sales-chart {
+  position: relative;
+  height: 300px
+}
+.checkbox-react {
+  border: 1px solid #c1c1c1;
+  padding: 0 2px;
+  margin-right: 10px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.checkbox-react i.fa-check {
+  color: #00a65a;
+}
+.flex-container {
+  display: flex;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-10 {
+  flex: 10;
+}
+.arrow-check-list {
+  padding: 10px;
+  border: 1px solid #f4f4f4;
+  cursor: pointer;
+}
+.arrow-check-list::before {
+  font-size: 15px;
+}
+
+.box-type-home {
+  cursor: pointer;
+}
+
+.list-blog-search i.arrow-check-list:hover {
+  color: #00a65a;
+  border: 1px solid #00a65a;
+}
+
+.list-blog-search .item {
+  padding: 10px 0;
+  border-top: 1px solid #f4f4f4;
+}
+.list-blog-search .item:first-child {
+  border-top : none;
+}
+.list-blog-search .item .message a {
+  color: #333;
+}
+.tool-action {
+  padding-top: 8px;
+  width: 146px;
+}
+.tool-action i {
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #f4f4f4;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.tool-action i:last-child {
+  margin-right: 0px;
+}
+.tool-action i:hover {
+  color: #00a65a;
+  border-color: #00a65a;
+}
+
+.tool-action a {
+  margin-right: 10px;
+}
+.tool-action a:last-child {
+  margin-right: 0px;
+}
+
+.dataTables_wrapper .dataTables_filter {
+  text-align: right;
+}
+div.dataTables_wrapper div.dataTables_length label {
+  font-weight: normal;
+  text-align: left;
+  white-space: nowrap;
+}
+table.dataTable thead .sorting_asc:after {
+  content: "\e155";
+}
+.dataTables_length {
+  margin-bottom: 10px;
+}
+/* .dataTables_length label {
+  float: left;
+  margin-right: 30px;
+}
+.dataTables_length select {
+  float: left;
+  width: 50%;
+}
+.dataTables_filter label {
+  float: left;
+  margin-right: 30px;
+}
+.dataTables_filter input {
+  float: left;
+  width: 50%;
+} */
+.table thead th {
+  position: relative;
+}
+.table thead th.asc::after {
+  content: "\e155";
+}
+.table thead th.desc::after {
+  content: "\e156";
+}
+.table thead th.sort-default::after {
+  content: "\e150";
+}
+.table thead th {
+  cursor: pointer;
+}
+.table thead th::after {
+  opacity: 0.2;
+  
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: block;
+  font-family: 'Glyphicons Halflings';
+  opacity: 0.5;
+}
+.pagging-react {
+  text-align: right;
+}
+.pagging-react ul {
+  margin: 0;
+}
+.upload-image {
+  position: relative;
+}
+.upload-image img {
+  width: 100%;
+}
+.upload-image button {
+  cursor: pointer;
+}
+.upload-image input[type=file] {
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  /* width: 98px; */
+}
+.fa-trash-o {
+  color: red
+}
+.fa-pencil {
+  color: #000;
+}
+.err-msg {
+  color: rgb(218, 71, 71);
+}
+/* .content-autoscroll {
+  height: calc(100vh - 195px);
+    overflow: hidden;
+}
+.content-right-autoscroll {
+  overflow-y: scroll;
+  height: calc(100vh - 195px);
+} */
+/* .content-list-left-autoscroll {
+  height: calc(100vh - 355px);
+  overflow-y: scroll;
+} */
+th {
+  padding-right: 15px !important;
+}
+.permision-checkbox {
+  margin-right: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+/* file manager */
+.file-manager .glyphicon-folder-open {
+  font-size: 80px;
+  color: yellow;
+  cursor: pointer;
+}
+.file-manager .glyphicon-folder-open:hover {
+  font-weight: bold;
+  color: red;
+}
+.file-manager .folder-name {
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+}
+.file-manager .file-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+.file-manager .file-image img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.popup-form {
+  position: fixed;
+  top: 0;
+  right: 0;
+  top: 0;
+  width: 70%;
+  background-color: white;
+  bottom: 0;
+  z-index: 9999;
+  overflow-y: scroll;
+}
+
+.content-wrapper,
+.right-side {
+  /* background-color: #222d32 !important; */
+}
+
+.modals-ta.modal {
+  z-index: 9999;
+}
+
+.ta-app .modal {
+  bottom: auto
+}
+

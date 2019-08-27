@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src='js/tinymce/tinymce.js'></script>
+  <script>
+  tinymce.init({
+	mode : "specific_textareas",
+  selector: '#mytextarea',
+  height: 500,
+  theme: 'modern',
+  // images_upload_url: 'http://localhost:3100/upload1',
+  plugins: 'print preview fullpage searchreplace autolink directionality visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists textcolor wordcount imagetools contextmenu colorpicker textpattern help image code',
+  toolbar1: 'formatselect | bold italic strikethrough forecolor backcolor | link | alignleft aligncenter alignright alignjustify  | numlist bullist outdent indent  | removeformat | undo redo | image code',
+  image_advtab: true,
+  templates: [
+    { title: 'Test template 1', content: 'Test 1' },
+    { title: 'Test template 2', content: 'Test 2' }
+  ],
+  content_css: [
+    '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+    '//www.tinymce.com/css/codepen.min.css'
+  ],
+
+   images_upload_handler: function (blobInfo, success, failure) {
+   	console.log(blobInfo)
+    var xhr, formData;
+
+    xhr = new XMLHttpRequest();
+    xhr.withCredentials = false;
+    xhr.open('POST', 'http://localhost:3100/upload');
+
+    xhr.onload = function() {
+      var json;
+
+      if (xhr.status != 200) {
+        failure('HTTP Error: ' + xhr.status);
+        return;
+      }
+
+      json = JSON.parse(xhr.responseText);
+
+      if (!json || typeof json.data.link != 'string') {
+        failure('Invalid JSON: ' + xhr.responseText);
+        return;
+      }
+
+      console.log(json.data.link)
+
+      success(json.data.link);
+    };
+
+    formData = new FormData();
+    formData.append('file', blobInfo.blob(), blobInfo.filename());
+
+    xhr.send(formData);
+  }
+  
+ });
+
+  function GetContent() {
+  	var c = tinymce.get('mytextarea').getContent();
+  	console.log(c)
+  }
+  </script>
+
+  <style type="text/css">
+  	.mce-notification.mce-has-close {
+  		display: none !important
+  	}
+  </style>
+</head>
+
+<body>
+<h1>TinyMCE Quick Start Guide</h1>
+  <form method="post">
+    <textarea id="mytextarea">Hello, World!</textarea>
+  </form>
+  <button onClick="GetContent()">get content
+  </button>
+</body>
+</html>

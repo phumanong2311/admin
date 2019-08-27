@@ -1,0 +1,107 @@
+.ta-container {
+  margin:10px;
+  position:relative
+}
+
+.ta-container::after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+.ta-container .ta-entries {
+  float: left;
+}
+.ta-container .ta-search-box {
+  float: right;
+}
+
+.ta-container .ta-search-box .ta-search-key {
+  margin:0.5em;
+  padding: 5px 10px
+}
+.ta-container table {
+  border-collapse: collapse;
+  width:100%;
+  margin: 10px 0;
+}
+.ta-container table tr.ta-no-record {
+  text-align: center;
+  padding: 10px 0;
+}
+.ta-container table th {
+  padding: 8px 10px;
+  text-align: left;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.ta-container table th.sorting {
+  background-image: url('../img/sort_both.png');
+}
+.ta-container table th.sorting_asc {
+  background-image: url('../img/sort_asc.png');
+}
+.ta-container table th.sorting_desc {
+  background-image: url('../img/sort_desc.png');
+}
+.ta-container table tbody td {
+  padding: 8px 10px;
+  border-top: 1px solid #ddd;
+}
+tr:nth-child(even){
+  background-color: #f2f2f2
+}
+.ta-container table thead th {
+  border-bottom: 1px solid #000
+}
+
+.ta-container table tfoot th {
+  border-top: 1px solid #000
+}
+.ta-container .ta-paging ul .ta-active a {
+  color: #333 !important;
+  border: 1px solid #979797;
+  background-color: white;
+  border-radius: 2px;
+  background: linear-gradient(to bottom, #fff 0%, #dcdcdc 100%);
+}
+.ta-container .ta-paging {
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+.ta-container .ta-paging ul {
+  display: inline-block;
+  float: right;
+  list-style: none;
+  padding-left: 0;
+}
+
+.ta-container .ta-paging ul li {
+  display: inline-block;
+}
+
+.ta-container .ta-paging ul li:hover a {
+  border-radius: 2px;
+  background: linear-gradient(to bottom, #585858 0%, #111 100%);
+  color: white !important;
+  border: 1px solid #111;
+  background-color: #585858;
+}
+
+.ta-container .ta-paging ul li a {
+  text-decoration: none;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-left: 2px;
+  color: black;
+  padding: 0.5em 1em;
+  min-width: 1em;
+  text-align: center;
+  border: 1px solid white;
+  text-decoration: none !important;
+  cursor: pointer;
+}
