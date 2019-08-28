@@ -257,4 +257,7 @@ th {
 .ta-app .modal {
   bottom: auto
 }
-
+.timeline-item .fa-remove {
+  position: relative;
+  cursor: pointer;
+}

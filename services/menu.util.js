@@ -33,6 +33,15 @@ let init = (permissions) => {
       ],
       icon: 'fa fa-book',
       permission: hasPermission(permissions.post.role, 'POSTVIEW')
+    },
+    {
+      key: 'gallery',
+      title: 'Gallery',
+      childItem: [
+        { text: 'Manage', link: '/gallery', permission: hasPermission(permissions.gallery.role, 'GALLERYEDIT') }
+      ],
+      icon: 'fa fa-book',
+      permission: hasPermission(permissions.gallery.role, 'GALLERYEDIT')
     }
   ]
   let menuData = []
