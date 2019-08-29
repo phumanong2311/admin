@@ -3,7 +3,7 @@
 ## Dependency directory
 ## Commenting this out is preferred by some people, see
 node_modules
-dist
+# dist
 package-lock.json
 .env
-# src
+src
