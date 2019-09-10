@@ -8,6 +8,6 @@ var config = {
 
 let { server } = config
 // config['server']['domain'] = `${server.protocol}://${server.host}:${server.port}`
-config['server']['domain'] = `http://api.edutour.vn`
+config['server']['domain'] = `http://103.137.185.70:3100`
 
 module.exports = config
