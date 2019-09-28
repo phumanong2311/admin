@@ -7,7 +7,7 @@ var config = {
 }
 
 let { server } = config
-config['server']['domain'] = `${server.protocol}://${server.host}:${server.port}`
-// config['server']['domain'] = `http://api.edutour.vn`
+// config['server']['domain'] = `${server.protocol}://${server.host}:${server.port}`
+config['server']['domain'] = `http://api.oduvn.com`
 
 module.exports = config
