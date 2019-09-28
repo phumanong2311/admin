@@ -21,6 +21,11 @@ global.appSession = session({
 app.use(global.appSession)
 app.use(cookieParser())
 app.use(bodyParser())
+
+app.use(express.urlencoded({
+  extended: true
+}))
+app.use(express.json())
 app.use(passport.initialize())
 app.use(passport.session())
 app.use('/', express.static('dist'))

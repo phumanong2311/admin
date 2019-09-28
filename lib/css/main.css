@@ -12,6 +12,14 @@ body {
   border: 1px solid #dddddd;
   padding: 10px
 }
+.wrapper {
+  background-color: #fff !important;
+  min-height: 100vh !important;
+}
+
+.main-sidebar {
+  background: #222d32;
+}
 
 .fs20 {
   font-size: 20px;
@@ -260,4 +268,22 @@ th {
 .timeline-item .fa-remove {
   position: relative;
   cursor: pointer;
+}
+
+.paginate_button a {
+  cursor: pointer;
+}
+
+.grid-input-group {
+  width: 100px;
+}
+
+.grid-input-group .input-group-addon {
+  cursor: pointer;
+}
+
+.grid-input-group .input-group-addon:hover {
+  background-color: #337ab7;
+  color: #fff;
+  
 }

@@ -25,6 +25,16 @@ let init = (permissions) => {
       permission: hasPermission(permissions.category.role, 'CATEGORYVIEW')
     },
     {
+      key: 'product',
+      title: 'Product',
+      childItem: [
+        { text: 'New', link: '/product/add', permission: hasPermission(permissions.product.role, 'PRODUCTADD') },
+        { text: 'List', link: '/product', permission: hasPermission(permissions.product.role, 'PRODUCTVIEW') }
+      ],
+      icon: 'fa fa-book',
+      permission: hasPermission(permissions.product.role, 'PRODUCTVIEW')
+    },
+    {
       key: 'post',
       title: 'Post',
       childItem: [

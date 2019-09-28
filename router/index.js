@@ -59,7 +59,7 @@ module.exports = function (app) {
     Adapter.setBody(body)
     Adapter.put((error, resp) => {
       if (error) return res.status(500).json({ message: 'request api error' })
-      var result = JSON.parse(resp)
+      var result = resp
       var data = result.data
       return res.status(200).json({ status: 200, message: 'success', data })
     })
