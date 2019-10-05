@@ -8,6 +8,6 @@ var config = {
 
 let { server } = config
 // config['server']['domain'] = `${server.protocol}://${server.host}:${server.port}`
-config['server']['domain'] = `http://api.oduvn.com`
+config['server']['domain'] = `http://api.bearlab.vn`
 
 module.exports = config

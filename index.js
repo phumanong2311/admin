@@ -43,6 +43,6 @@ require('./router')(app)
 
 require('./socket')(io, app)
 
-app.listen(process.env.PORT || 3200, () => {
-  console.log(`server listen port ${process.env.PORT || 3200}`)
+app.listen(process.env.PORT || 3201, () => {
+  console.log(`server listen port ${process.env.PORT || 3201}`)
 })
